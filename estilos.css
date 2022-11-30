@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Heura";
+    src: url(./assets/fonts/Heura.woff);
+}
+
+@media screen and (max-width: 1023px) {
+    .menu-list{
+        display:none;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1700px) {
+   .burguer{
+    display:none;
+    }
+  }
+
+body{
+ font-family: "Heura";   
+ margin: 0 auto;
+}
+
+header{
+    background-color: #f9e021;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100px;
+}
+
+.logo-header{
+    width: 100px;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    animation-name: menu;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+@keyframes menu {
+    100% {color: white;}
+    100% {text-decoration: underline;}
+}
+
+.menu-list-item{
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 15px;
+    
+}
+
+.burguer{
+    background-color: white;
+    border-radius: 60px;
+    padding: 10px 11px;
+}
+
+.burguer:hover{
+    animation-name: burguer;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+@keyframes burguer {
+    100% {color: white;}
+    100% {background-color: black;}
+}
